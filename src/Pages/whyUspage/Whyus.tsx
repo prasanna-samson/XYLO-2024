@@ -123,7 +123,7 @@ const Whyus: React.FC = () => {
   const b: number = (selectedIndex + 1) % cards.length; 
   const c: number = (selectedIndex + 2) % cards.length; 
   const d: number = (selectedIndex + 3) % cards.length;
-
+  const e: number = (selectedIndex + 4) % cards.length;
   return (
     <div className='bg-white h-screen'>
       <div className='grid grid-cols-5'>
@@ -160,8 +160,8 @@ const Whyus: React.FC = () => {
         </div>    
 
         <div className="card-item col-end-auto border-b-2">
-          {cards[selectedIndex].icon}
-          <p className="text-center mt-2">{cards[selectedIndex].title}</p>
+          {cards[e].icon}
+          <p className="text-center mt-2">{cards[e].title}</p>
         </div>
       </div>
     </div>    
