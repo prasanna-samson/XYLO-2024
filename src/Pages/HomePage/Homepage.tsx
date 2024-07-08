@@ -1,4 +1,4 @@
-import React from 'react'
+
 import earth from '../../assets/earth.gif';
 import './Homepage.css'
 function Homepage() {

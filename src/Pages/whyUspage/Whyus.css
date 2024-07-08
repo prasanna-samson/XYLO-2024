@@ -3,3 +3,44 @@
 
     @apply bg-white w-60 p-4 shadow-md text-sm m-auto rounded-lg flex flex-col items-center;
 }
+
+
+
+@keyframes ping {
+    75%, 100% {
+        transform: scale(1);
+        opacity: 8;
+    }
+}
+.animate-myping {
+    animation: ping 4.6s cubic-bezier(0, 0, 0.2, 0.8) infinite;
+}
+
+
+.type-cur {
+    width: 7ch;
+    animation: typing 2s steps(50), blink .10s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+  }
+  
+  .type {
+    width: 100ch;
+    animation: typing 100s steps(50), blink .6s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }

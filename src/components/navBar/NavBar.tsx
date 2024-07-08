@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import logo from '../../assets/xyloLogo.png';
 import './NavBar.css';
 const NavBar = () => {

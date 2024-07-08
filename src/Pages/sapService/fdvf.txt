@@ -1,0 +1,24 @@
+{
+      title: 'Finance',
+      content: 'Become an intelligent finance function - drive your digital finance transformation.'
+    },
+    {
+      title: 'Industry transformation with SAP solutions',
+      content: 'Become an intelligent finance function - drive your digital finance transformation.'
+    },
+    {
+      title: 'Intelligent Talent & HR',
+      content: 'Become an intelligent finance function - drive your digital finance transformation.'
+    },
+    {
+      title: 'Sourcing and Procurement',
+      content: 'Become an intelligent finance function - drive your digital finance transformation.'
+    },
+    {
+      title: 'Customer experience',
+      content: 'Become an intelligent finance function - drive your digital finance transformation.'
+    },
+    {
+      title: 'Intelligent data management',
+      content: 'Become an intelligent finance function - drive your digital finance transformation.'
+    }

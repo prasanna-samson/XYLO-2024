@@ -12,6 +12,12 @@ export default {
       fontFamily:{
         display:['Poppins']
       },  
+
+      fontSize:{
+        'zero':1
+
+      },
+      
     },
     
   },

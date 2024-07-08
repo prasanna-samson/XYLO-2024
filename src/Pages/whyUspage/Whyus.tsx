@@ -110,7 +110,7 @@ const Whyus: React.FC = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setSelectedIndex(getRandomIndex());
-    }, 3000);
+    }, 5000);
 
     return () => clearInterval(interval);
   }, []);
@@ -126,10 +126,10 @@ const Whyus: React.FC = () => {
   const e: number = (selectedIndex + 4) % cards.length;
   return (
     <div className='bg-white h-full py-10 '>
-      <div className='grid grid-cols-5'>
-        <div className="card-item col-start-3 mt-8 ">
-          {cards[a].icon}
-          <p className="text-center mt-2">{cards[a].title}</p>
+      <div className='grid grid-cols-5 '>
+        <div className=" col-start-2 col-span-2  mt-8 ">
+            <h1 className=" text-xl font-bold type-cur">Why Us</h1> 
+          <p className=" mt-2 type">Our success is built on innovation, dedication, quality, and teamwork,</p>
         </div>
       </div>
 
@@ -139,11 +139,10 @@ const Whyus: React.FC = () => {
           <p className="text-center mt-2">{cards[b].title}</p>
         </div>    
 
-        <div className=" flex items-center col-start-2 ">
-          <div className="mt-8 text-center shadow-xl p-5 rounded-2xl">
-            <h1 className="text-3xl font-bold ">Why Us</h1>
-            <p className="mt-4 max-w-md text-center ">
-              Our success is built on innovation, dedication, quality, and teamwork, driving us to deliver exceptional software solutions globally.
+        <div className="  col-start-2 ">
+          <div className="mt-8  bg-gradient-to-r transition-all from-xylo animate-myping  text-black w-full h-64 shadow-xl  rounded-2xl flex flex-col justify-center">
+            <h1 className="flex justify-center ">{cards[a].icon}</h1>
+            <p className="mt-4 max-w-md text-center text-xl">{cards[a].title}
             </p>
           </div>
         </div>
