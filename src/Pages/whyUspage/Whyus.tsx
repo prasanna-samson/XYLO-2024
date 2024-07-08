@@ -125,41 +125,41 @@ const Whyus: React.FC = () => {
   const d: number = (selectedIndex + 3) % cards.length;
   const e: number = (selectedIndex + 4) % cards.length;
   return (
-    <div className='bg-white h-screen'>
+    <div className='bg-white h-full py-10 '>
       <div className='grid grid-cols-5'>
-        <div className="card-item col-start-3 border-b-2">
+        <div className="card-item col-start-3 mt-8 ">
           {cards[a].icon}
           <p className="text-center mt-2">{cards[a].title}</p>
         </div>
       </div>
 
       <div className='grid grid-cols-3 mt-20'>
-        <div className="card-item col-start-1 border-b-2">
+        <div className="card-item col-start-1 ">
           {cards[b].icon}
           <p className="text-center mt-2">{cards[b].title}</p>
         </div>    
 
-        <div className=" flex items-center col-start-2">
-          <div className="mt-8 text-center shadow-xl p-5">
+        <div className=" flex items-center col-start-2 ">
+          <div className="mt-8 text-center shadow-xl p-5 rounded-2xl">
             <h1 className="text-3xl font-bold ">Why Us</h1>
-            <p className="mt-4 max-w-md text-center">
+            <p className="mt-4 max-w-md text-center ">
               Our success is built on innovation, dedication, quality, and teamwork, driving us to deliver exceptional software solutions globally.
             </p>
           </div>
         </div>
-        <div className="card-item col-end-auto ml-auto border-b-2">
+        <div className="card-item col-end-auto ml-auto">
           {cards[c].icon}
           <p className="text-center mt-2">{cards[c].title}</p>
         </div>
       </div>
 
       <div className='grid grid-cols-4 mt-20'>
-        <div className="card-item col-start-2 border-b-2">
+        <div className="card-item col-start-2 ">
           {cards[d].icon}
           <p className="text-center mt-2">{cards[d].title}</p>
         </div>    
 
-        <div className="card-item col-end-auto border-b-2">
+        <div className="card-item col-end-auto ">
           {cards[e].icon}
           <p className="text-center mt-2">{cards[e].title}</p>
         </div>

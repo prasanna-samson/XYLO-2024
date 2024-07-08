@@ -1,8 +1,5 @@
-.card-section{
-    @apply size-16 border-y-2 mx-auto p-2 border-t-0 border-b-black;
 
-}
 .card-item{
 
-    @apply bg-white w-64 p-4 rounded-lg  flex flex-col items-center;
+    @apply bg-white w-60 p-4 shadow-md text-sm m-auto rounded-lg flex flex-col items-center;
 }

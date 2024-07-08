@@ -10,10 +10,10 @@ const NavBar = () => {
   }
 
   return (
-    <nav className="bg-white p-6 shadow-xl font-sans font-medium">
+    <nav className="bg-white p-5 px-10 shadow-2xl font-medium">
       <div className='md:flex justify-between  md:max-w-8xl '>
       <div className="flex justify-between">
-      <img src={logo} alt="logo" className="size-fit " />
+      <img src={logo} alt="logo" className="size-fit ml-10 mt-1" />
 
           <div className='md:hidden '>
         <button onClick={menuClick}>
