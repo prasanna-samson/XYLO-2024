@@ -8,12 +8,12 @@
 
 @keyframes ping {
     75%, 100% {
-        transform: scale(1);
-        opacity: 8;
+        transform: scale(2);
+        opacity: 100;
     }
 }
 .animate-myping {
-    animation: ping 4.6s cubic-bezier(0, 0, 0.2, 0.8) infinite;
+    animation: ping 5s cubic-bezier(0, 0, 0.2, 1) infinite;
 }
 
 
@@ -24,14 +24,7 @@
     overflow: hidden;
     border-right: 3px solid;
   }
-  
-  .type {
-    width: 100ch;
-    animation: typing 100s steps(50), blink .6s step-end infinite alternate;
-    white-space: nowrap;
-    overflow: hidden;
-    border-right: 3px solid;
-  }
+ 
   
   @keyframes typing {
     from {
