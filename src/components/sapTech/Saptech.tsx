@@ -2,7 +2,7 @@ import React from 'react'
 import image from '../../assets/sapTech.png'
 const Saptech : React.FC = () => {
   return (
-    <div className='p-20 h-screen bg-xylo'>
+    <div className='p-20 mb-8 h-screen bg-xylo'>
 
             <div className='grid grid-cols-12'>
                 <div className=' col-start-1 col-span-4 border rounded-xl shadow-md h-auto flex flex-col justify-between bg-white'>

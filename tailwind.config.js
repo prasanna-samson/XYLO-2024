@@ -7,7 +7,9 @@ export default {
     extend: {
       colors:{
         'myblue':'#1F419B',
-        'xylo':'#eceef6'
+        'xylo':'#eceef6',
+        'midnightblue':'#0d1b3f'
+
       },
       fontFamily:{
         display:['Poppins']

@@ -7,6 +7,9 @@ import Sap from './components/sapService/Sap';
 import Slidebar from './components/slide/Slidebar';
 import Saptech from './components/sapTech/Saptech';
 import Sapsupport from './components/maintain/Sapsupport';
+import Unlock from './components/connectivity/Unlock';
+import Lastpage from './components/lastPage/Lastpage';
+
 
 function App() {
  
@@ -20,6 +23,8 @@ function App() {
     <Slidebar/>
     <Saptech></Saptech>
     <Sapsupport></Sapsupport>
+    <Unlock></Unlock>
+    <Lastpage></Lastpage>
   </>
   )
 }
