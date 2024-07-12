@@ -13,6 +13,59 @@ li{
     @apply  bg-myblue p-1  px-5 rounded-lg transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 text-white mx-2;
 }
 
+
+.navbar {
+    max-width: 100%;
+  }
+  
+  .logo {
+    max-height: 50px;
+  }
+  
+  .menu-button {
+    cursor: pointer;
+  }
+  
+  .menu-content {
+    display: none;
+  }
+  
+  .menu-list {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .menu-item {
+    margin: 10px 0;
+  }
+  
+  .dropdown-menu {
+    display: none;
+  }
+  
+  .menu-item.dropdown:hover .dropdown-menu,
+  .menu-item.dropdown:focus-within .dropdown-menu {
+    display: block;
+  }
+  
+  /* Responsive Styles */
+  @media (min-width: 768px) {
+    .menu-content {
+      display: flex !important;
+    }
+    
+    .menu-list {
+      flex-direction: row;
+    }
+    
+    .menu-item {
+      margin: 0 15px;
+    }
+  }
+  
+
 /* 
 
 .nav-bg{

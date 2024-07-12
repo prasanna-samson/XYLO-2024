@@ -2,7 +2,7 @@ import React from 'react'
 import image from "../../assets/support.png"
 const Sapsupport:React.FC = () => {
   return (
-    <div className='p-20 h-screen bg-white  grid grid-cols-12'>
+    <div className='p-20  font-display bg-white  grid grid-cols-12'>
 
     <div className='max-h-full col-span-7 flex flex-col justify-center  mb-10 p-10 col-start-1'>
         <h1 className='text-6xl  font-semibold mb-10'>SAP Support and Maintenance</h1>

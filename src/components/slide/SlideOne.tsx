@@ -32,7 +32,7 @@ const SlideOneCard: Card[] = [
 
 function SlideOne() {
   return (
-    <div className='grid grid-cols-12 h-screen bg-gradient-to-r from-xylo via-white to-white'>
+    <div className='grid grid-cols-12  font-display bg-gradient-to-r py-20 from-xylo via-white to-white'>
       <h1 className='col-span-12  col-start-2 text-4xl font-semibold text-left border-b-6 my-10'>
         Expert SAP Consultation <br />Services
       </h1>
@@ -46,7 +46,7 @@ function SlideOne() {
           </div>
         ))}
       </div>
-      <div className='col-span-3 col-start-6'>
+      <div className='col-span-3 col-start-6 '>
         {SlideOneCard.slice(3, 6).map((card, index) => (
           <div key={index} className='text-left my-5'>
             <h1 className='font-semibold my-3'>{card.title}</h1>

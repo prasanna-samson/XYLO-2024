@@ -32,7 +32,7 @@ const SlideThreeCard: Card[] = [
 
 function SlideThree() {
   return (
-    <div className='grid grid-cols-12 h-screen bg-gradient-to-r from-xylo via-white to-white'>
+    <div className='grid grid-cols-12  font-display bg-gradient-to-r py-20 from-xylo via-white to-white'>
       <h1 className='col-span-12  col-start-2 text-4xl font-semibold text-left border-b-6 my-10'>
       Elevate Your Business with <br/>SAP S/4HANA
       </h1>

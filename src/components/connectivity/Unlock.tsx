@@ -2,7 +2,7 @@ import React from 'react'
 import image from '../../assets/usc.png'
 const Unlock:React.FC = () => {
   return ( 
-  <div className='h-screen grid-rows-3'>
+  <div className=' grid-rows-3 font-display'>
     <div className=' bg-white  row-start-2 m-40 rounded-md shadow-xl p-5 grid grid-cols-12'>
 
         <div className='col-start-1  col-span-5'>

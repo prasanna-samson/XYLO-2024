@@ -26,10 +26,10 @@ export default function Slidebar() {
     }}
     effect="coverflow"
     coverflowEffect={{
-      rotate: 60,
+      rotate: 30,
       stretch: 1,
-      depth: 1000,
-      modifier: 12,
+      depth: 0,
+      modifier: 10,
       slideShadows: true,
     }}
     modules={[Pagination, Autoplay, EffectCoverflow]}
@@ -38,7 +38,7 @@ export default function Slidebar() {
          
         <SwiperSlide >
        
-          <SlideOne/>
+          <SlideOne />
 
         </SwiperSlide>
         <SwiperSlide >
@@ -51,7 +51,7 @@ export default function Slidebar() {
           <SlideThree></SlideThree>
 
         </SwiperSlide>
-        <SwiperSlide >
+        <SwiperSlide className='bg-white'>
        
           <SlideFour></SlideFour>
 

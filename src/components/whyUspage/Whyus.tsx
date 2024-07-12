@@ -1,15 +1,14 @@
-import React, { useEffect, useState } from 'react';
-import './Whyus.css';
-
-interface Card {
-  title: string;
-  icon: JSX.Element;
-}
+import React from 'react';
 
 const Whyus: React.FC = () => {
+  interface Card {
+    title: string;
+    icon: JSX.Element;
+  }
+
   const cards: Card[] = [
     {
-      title: 'Extensive Expertise (30+ Solution Architects)',
+      title: 'Extensive Expertise  (30+ Solution Architects)',
       icon: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -17,7 +16,7 @@ const Whyus: React.FC = () => {
           viewBox="0 0 24 24"
           strokeWidth="1.5"
           stroke="currentColor"
-          className="w-10 h-10 md:w-12 md:h-12"
+          className="w-10 h-10 md:w-12 md:h-12 text-midnightblue"
         >
           <path
             strokeLinecap="round"
@@ -36,7 +35,7 @@ const Whyus: React.FC = () => {
           viewBox="0 0 24 24"
           strokeWidth="1.5"
           stroke="currentColor"
-          className="w-10 h-10 md:w-12 md:h-12"
+          className="w-10 h-10 md:w-12 md:h-12 text-midnightblue"
         >
           <path
             strokeLinecap="round"
@@ -55,7 +54,7 @@ const Whyus: React.FC = () => {
           viewBox="0 0 24 24"
           strokeWidth="1.5"
           stroke="currentColor"
-          className="w-10 h-10 md:w-12 md:h-12"
+          className="w-10 h-10 md:w-12 md:h-12 text-midnightblue "
         >
           <path
             strokeLinecap="round"
@@ -74,7 +73,7 @@ const Whyus: React.FC = () => {
           viewBox="0 0 24 24"
           strokeWidth="1.5"
           stroke="currentColor"
-          className="w-10 h-10 md:w-12 md:h-12"
+          className="w-10 h-10 md:w-12 md:h-12 text-midnightblue"
         >
           <path
             strokeLinecap="round"
@@ -93,7 +92,7 @@ const Whyus: React.FC = () => {
           viewBox="0 0 24 24"
           strokeWidth="1.5"
           stroke="currentColor"
-          className="w-10 h-10 md:w-12 md:h-12"
+          className="w-10 h-10 md:w-12 md:h-12 text-midnightblue"
         >
           <path
             strokeLinecap="round"
@@ -105,66 +104,40 @@ const Whyus: React.FC = () => {
     },
   ];
 
-  const [selectedIndex, setSelectedIndex] = useState<number>(0);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setSelectedIndex(getRandomIndex());
-    }, 5000);
-
-    return () => clearInterval(interval);
-  }, []);
-
-  const getRandomIndex = (): number => {
-    return Math.floor(Math.random() * cards.length);
-  };
-
-  const a: number = selectedIndex;
-  const b: number = (selectedIndex + 1) % cards.length; 
-  const c: number = (selectedIndex + 2) % cards.length; 
-  const d: number = (selectedIndex + 3) % cards.length;
-  const e: number = (selectedIndex + 4) % cards.length;
   return (
-    <div className='bg-white h-full py-10 '>
-      <div className='grid grid-cols-5 '>
-        <div className=" col-start-2 col-span-3 mt-8">
-            <h1 className=" text-xl font-bold type-cur">Why Us</h1> 
-          <p className="text-center mt-2 ">Our success is built on innovation, dedication, quality, and teamwork, driving us to deliver exceptional software solutions globally.</p>
-        </div>
+    <div className='grid grid-cols-1 md:grid-cols-12  gap-10 font-display bg-white  p-8 md:p-20'>
+      <div className='col-span-full md:col-span-5  md:col-start-1 my-36 text-center md:text-left mb-20'>
+        <h1 className='text-2xl md:text-3xl mb-5'>Why?</h1>
+        <h1 className='text-4xl md:text-6xl text-myblue my-5 font-semibold'>XYLOINC</h1>
+        <p className='text-sm md:text-base'>
+          Our success is built on innovation, dedication, quality, 
+          and teamwork, driving us to 
+          deliver exceptional software 
+          solutions globally.
+        </p>
       </div>
-
-      <div className='grid grid-cols-3 mt-20'>
-        <div className="card-item col-start-1 ">
-          {cards[b].icon}
-          <p className="text-center mt-2">{cards[b].title}</p>
-        </div>    
-
-        <div className="  col-start-2 ">
-          <div className="mt-8  bg-gradient-to-r from-xylo animate-myping  text-black w-full h-64 shadow-xl  rounded-2xl flex flex-col justify-center">
-            <h1 className="flex justify-center ">{cards[a].icon}</h1>
-            <p className="mt-4 max-w-md text-center text-xl">{cards[a].title}
-            </p>
+      
+      <div className='col-span-full md:col-span-4 md:col-start-6 mb-20'>
+        {cards.slice(0, 3).map((item, index) => (
+          <div key={index} className='flex flex-col items-center py-6 md:py-10 hover:bg-xylo'>
+            {item.icon}
+            <p className='pt-2 md:pt-4 text-center md:text-left'>{item.title}</p>
+            <hr className='w-full bg-midnightblue heading'/>
           </div>
-        </div>
-        <div className="card-item col-end-auto ml-auto">
-          {cards[c].icon}
-          <p className="text-center mt-2">{cards[c].title}</p>
-        </div>
+        ))}
       </div>
-
-      <div className='grid grid-cols-4 mt-20'>
-        <div className="card-item col-start-2 ">
-          {cards[d].icon}
-          <p className="text-center mt-2">{cards[d].title}</p>
-        </div>    
-
-        <div className="card-item col-end-auto ">
-          {cards[e].icon}
-          <p className="text-center mt-2">{cards[e].title}</p>
-        </div>
+      
+      <div className='col-span-full md:col-span-4 md:col-start-10 my-20'>
+        {cards.slice(3, 5).map((item, index) => (
+          <div key={index} className='flex flex-col items-center py-6 md:py-10 hover:bg-xylo'>
+            {item.icon}
+            <p className='pt-2 md:pt-4 text-center md:text-left'>{item.title}</p>
+            <hr className='w-full bg-midnightblue heading'/>
+          </div>
+        ))}
       </div>
-    </div>    
+    </div>
   );
-};
+}
 
 export default Whyus;

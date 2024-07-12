@@ -32,7 +32,7 @@ const SlideTwoCard: Card[] = [
 
 function SlideTwo() {
   return (
-    <div className='grid grid-cols-12 h-screen'>
+    <div className='grid grid-cols-12 font-display py-20'>
       <h1 className='col-span-12  col-start-2 text-4xl font-semibold text-left border-b-6 my-10'>
       Seamless SAP Implementation <br/>Support
       </h1>

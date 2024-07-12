@@ -28,32 +28,34 @@ const SlideFourCard: Card[] = [
 
 function SlideFour() {
   return (
-    <div className='grid grid-cols-12 h-screen'>
-      <h1 className='col-span-12  col-start-2 text-4xl font-semibold text-left border-b-6 my-10'>
-      Our Proven Track Record and<br/> Services
-      </h1>
-      <div className='col-span-3 col-start-2'>
-        <img src={image} alt="Expert SAP Consultation Services" className='w-3/4' />
-      </div>
-      <div className='col-span-3 col-start-5'>
-        {SlideFourCard.slice(0, 2).map((card, index) => (
-          <div key={index} className='text-left my-5'>
-            <h1 className='font-semibold my-3'>{card.title}</h1>
-            <p className='text-sm mb-3'>{card.content}</p>
-            <hr className='border-black border-1' />
-          </div>
-        ))}
-      </div>
-      <div className='col-span-3 col-start-9'>
-        {SlideFourCard.slice(2, 6).map((card, index) => (
-          <div key={index} className='text-left my-5'>
-            <h1 className='font-semibold my-3'>{card.title}</h1>
-            <p className='text-sm mb-3'>{card.content}</p>
-            <hr className='border-black border-1' />
-          </div>
-        ))}
-      </div>
+    <div className='grid grid-cols-12  font-display bg-gradient-to-r py-20 h-max from-xylo via-white to-white'>
+    <h1 className='col-span-12  col-start-2 text-4xl font-semibold text-left border-b-6 my-10'>
+      Expert SAP Consultation <br />Services
+    </h1>
+    
+    <div className='col-span-3 col-start-2'>
+      {SlideFourCard.slice(0, 2).map((card, index) => (
+        <div key={index} className='text-left my-5'>
+          <h1 className='font-semibold my-3'>{card.title}</h1>
+          <p className='text-sm mb-3'>{card.content}</p>
+          <hr className='border-black border-1' />
+        </div>
+      ))}
     </div>
+    <div className='col-span-3 col-start-6'>
+      {SlideFourCard.slice(2, 6).map((card, index) => (
+        <div key={index} className='text-left my-5'>
+          <h1 className='font-semibold my-3'>{card.title}</h1>
+          <p className='text-sm mb-3 overflow-y-hidden'>{card.content}</p>
+          <hr className='border-black border-1' />
+        </div>
+      ))}
+    </div>
+    <div className='col-span-4 col-start-10'>
+      <img src={image} alt="Expert SAP Consultation Services" className='w-3/4' />
+    </div>
+
+  </div>
   );
 }
 

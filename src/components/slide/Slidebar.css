@@ -8,11 +8,11 @@
   }
   
   body {
-    background: #eee;
-    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    background: #ffffff;
+
     font-size: 14px;
     color: #000;
-    margin: 0;
+    margin-top: 0;
     padding: 0;
   }
   
@@ -22,11 +22,10 @@
   }
   
   .swiper-slide {
+
     text-align: center;
     font-size: 18px;
     background: #fff;
-  
-    /* Center slide text vertically */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -35,7 +34,7 @@
   .swiper-slide {
     display: block;
     width: 100vh;
-    height: 100vh;
     object-fit: cover;
+
   }
   

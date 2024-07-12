@@ -1,5 +1,6 @@
 import React from 'react';
-import image from '../../assets/sap.png';
+import image from '../../assets/Sapnew.svg';
+import './Sap.css';
 
 interface Card {
   title: string;
@@ -59,28 +60,53 @@ const Sap: React.FC = () => {
   ];
 
   return (
-    <div className="h-screen bg-gradient-to-r from-xylo via-white to-white py-5">
-      <h1 className="text-center text-6xl font-bold py-4">SAP Services</h1>
-      <div className="grid grid-cols-6 gap-4">
-        <div className="col-span-3 flex justify-center items-center h-fit">
-          <img src={image} alt="SAP" className="size-max" />
-        </div>
-        <div className="col-span-3 grid grid-cols-2 gap-4">
-          {sapcard.map((card, index) => (
-            <div key={index} className="group p-2 rounded cursor-pointer">
-              <div className="flex items-center">
-                <h1 className="text-md flex justify-start group-hover:text-myblue">{card.title}<span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 ml-1">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
-                </svg></span></h1>
-                
-              </div>
-              <div className="hidden group-hover:block group-hover:ease-in-out group-hover:duration-700 text-sm">
-                {card.content}
-              </div>
-              <hr />
+    <div className="font-display bg-white grid grid-cols-1 md:grid-cols-12 p-5 gap-10">
+      <h1 className="text-center text-4xl font-bold col-span-full">SAP SERVICES</h1>
+      
+      <div className="col-span-full md:col-span-4 md:col-start-1 flex justify-center">
+        <img src={image} alt="SAP" className="md:w-svw w-2/3 m-auto" />
+      </div>
+      
+      <div className="col-span-full md:col-span-4 md:col-start-5 space-y-4">
+        {sapcard.slice(0, 6).map((card, index) => (
+          <div key={index} className="group rounded cursor-pointer">
+            <div className="flex items-center">
+              <h1 className="text-sm flex justify-start group-hover:text-myblue transform transition-transform translate-y-10 group-hover:translate-y-0">
+                {card.title}
+                <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 ml-1">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+                  </svg>
+                </span>
+              </h1>
             </div>
-          ))}
-        </div>
+            <div className="text-transparent pb-2 group-hover:text-black transition-colors duration-700 text-sm">
+              {card.content}
+            </div>
+            <hr />
+          </div>
+        ))}
+      </div>
+      
+      <div className="col-span-full md:col-span-4 md:col-start-9 space-y-4">
+        {sapcard.slice(6).map((card, index) => (
+          <div key={index} className="group rounded cursor-pointer">
+            <div className="flex items-center">
+              <h1 className="text-sm flex justify-start group-hover:text-myblue transform transition-transform translate-y-10 group-hover:translate-y-0">
+                {card.title}
+                <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 ml-1">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+                  </svg>
+                </span>
+              </h1>
+            </div>
+            <div className="text-transparent pb-2 group-hover:text-black transition-colors duration-700 text-sm">
+              {card.content}
+            </div>
+            <hr />
+          </div>
+        ))}
       </div>
     </div>
   );
